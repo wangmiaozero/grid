@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        /* 指定一个容器采用网格布局 */
+        display: grid;
+         /* 行内元素 */
+        /* display: inline-grid; */
+        background-color: #ccc;
+        grid-template-columns: repeat(3,33.33%);
+        grid-template-rows:repeat(3,33.33%);
+        /* width: 100%;
+        height: 100%; */
+        /* 有时候，重复写同样的值非常麻烦，尤其网格很多时。这时，可以使用repeat()函数，简化重复的值。
+        上面的代码用repeat()改写如下。 */
+    }
+    .box1{
+        background-color: red;
+        /* width: 1000px; */
+       
+    }
+    .box2{
+        background-color: yellow;
+    }
+    .box3{
+        background-color: green;
+    }
+    .box3{
+        background-color: blue;
+    }
+</style>
+<body>
+    <script>
+        // 注意，设为网格布局以后，
+        // 容器的float、display: inline-block、display: table-cell、vertical-align和column-*等设置都将失效
+        //grid-template-columns 属性，
+        //grid-template-rows 属性
+        //容器指定了网格布局以后，接着就要划分行和列。
+        //grid-template-columns属性定义每一列的列宽，grid-template-rows属性定义每一行的行高。
+    </script>
+    <div class="container">
+        <div class="box1">
+            <p>1</p>
+        </div>
+        <div class="box2">
+            <p>2</p>
+        </div>
+        <div class="box3">
+            <p>3</p>
+        </div>
+        <div class="box4">
+            <p>4</p>
+        </div>
+        <div class="box1">
+            <p>5</p>
+        </div>
+        <div class="box2">
+            <p>6</p>
+        </div>
+        <div class="box3">
+            <p>7</p>
+        </div>
+        <div class="box4">
+            <p>8</p>
+        </div>
+        <div class="box1">
+            <p>9</p>
+        </div>
+    </div>
+</body>
+</html>
