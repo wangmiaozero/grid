@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        /* grid-row-gap属性设置行与行的间隔（行间距），grid-column-gap属性设置列与列的间隔（列间距）。 */
+        /* display: grid; */
+        /* grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px; */
+/*         
+grid-template-areas: 'a a a'
+                     'b b b'
+                     'c c c'; */
+                     grid-template-areas: 'a b c'
+                       'd e f'
+                       'g h i'
+        /* grid-template-areas: "header. header. header."
+                     "main main sidebar"
+                     "footer footer footer"; */
+                     /* 上面代码先划分出9个单元格，然后将其定名为a到i的九个区域，分别对应这九个单元格。 */
+                     /* 上面代码中，顶部是页眉区域header，底部是页脚区域footer，中间部分则为main和sidebar。
+
+如果某些区域不需要利用，则使用"点"（.）表示。 */
+    }
+    .box1{
+        background-color: red;
+        /* width: 1000px; */
+
+       
+        float: left;
+       
+    }
+    .box2{
+        background-color: yellow;
+
+    
+        float: left;
+    }
+    .box3{
+        background-color: green;
+
+ 
+        float: left;
+    }
+    .box4{
+        background-color: blue;
+   
+    
+    }
+    .box5{
+        background-color: black;
+
+   
+    }
+    .box6{
+        background-color: pink;
+
+ 
+    }
+    .box7{
+        background-color: saddlebrown;
+      
+
+    }
+    .box8{
+        background-color: lawngreen;
+
+
+    }
+    .box9{
+        background-color: rebeccapurple;
+
+
+    }
+</style>
+<body>
+    <script>
+        // 注意，设为网格布局以后，
+        // 容器的float、display: inline-block、display: table-cell、vertical-align和column-*等设置都将失效
+        //grid-template-columns 属性，
+        //grid-template-rows 属性
+        //容器指定了网格布局以后，接着就要划分行和列。
+        //grid-template-columns属性定义每一列的列宽，grid-template-rows属性定义每一行的行高。
+    </script>
+    <div class="container">
+        <div class="box1">
+            <p>1</p>
+        </div>
+        <div class="box2">
+            <p>2</p>
+        </div>
+        <div class="box3">
+            <p>3</p>
+        </div>
+        <div class="box4">
+            <p>4</p>
+        </div>
+        <div class="box5">
+            <p>5</p>
+        </div>
+        <div class="box6">
+            <p>6</p>
+        </div>
+        <div class="box7">
+            <p>7</p>
+        </div>
+        <div class="box8">
+            <p>8</p>
+        </div>
+        <div class="box9">
+            <p>9</p>
+        </div>
+    </div>
+</body>
+</html>
